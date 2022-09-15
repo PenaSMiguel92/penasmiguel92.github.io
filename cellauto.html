@@ -6,11 +6,70 @@
 -->
 <html>
 	<head>
-		<title>No Sidebar - Landed by HTML5 UP</title>
+		<title>Miguel S. Peña's Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.button-group {
+				float: left;
+
+			}
+			#sandbtn {
+				background-color: #cccc00;
+				border: 1px solid #000;
+				color: white;
+				width: 100px;
+				display: block;
+			}
+			#sandbtn:hover {
+				background-color: #999900;
+			}
+			#firebtn {
+				background-color: #ff0000;
+				border: 1px solid #000;
+				color: white;
+				width: 100px;
+				display: block;
+			}
+			#firebtn:hover {
+				background-color: #cc0000;
+			}
+			#woodbtn {
+				background-color: #994d00;
+				border: 1px solid #000;
+				color: white;
+				width: 100px;
+				display: block;
+			}
+			#woodbtn:hover {
+				background-color: #663300;
+			}
+			#gpowderbtn {
+				background-color: #1a1a1a;
+				border: 1px solid #000;
+				color: white;
+				width: 100px;
+				display: block;
+			}
+			#gpowderbtn:hover {
+				background-color: #000000;
+			}
+			#waterbtn {
+				background-color: #6699ff;
+				border: 1px solid #000;
+				color: white;
+				width: 100px;
+				display: block;
+			}
+			#waterbtn:hover {
+				background-color: #3377ff;
+			}
+			.cellauto {
+				padding-left:10rem;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 		<div id="page-wrapper">
@@ -29,7 +88,8 @@
 									<li><a href="tetris.html">Tetris</a></li>
 									<li><a href="vrcpr.html">VR CPR</a></li>
 									<li><a href="cellauto.html">Cell Automata Sandbox</a></li>
-									<li><a href="emg_robot.html">EMG Controlled Robot Hand</a></li>
+									<li><a href="fmri.html">fMRI Non-linear Complexity Application</a></li>
+									<!--li><a href="emg_robot.html">EMG Controlled Robot Hand</a></li-->
 									<!--li>
 										<a href="#">Submenu</a>
 										<ul>
@@ -51,24 +111,39 @@
 				<div id="main" class="wrapper style1">
 					<div class="container">
 						<header class="major">
-							<h2>No Sidebar</h2>
-							<p>Ipsum dolor feugiat aliquam tempus sed magna lorem consequat accumsan</p>
+							<h2>Cell Automata Sandbox Game</h2>
+							<p>Programmed with JavaScript and nothing more.</p>
 						</header>
 
 						<!-- Content -->
 							<section id="content">
-								<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-								<h3>Dolore Amet Consequat</h3>
-								<p>Aliquam massa urna, imperdiet sit amet mi non, bibendum euismod est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam quam, mollis at magna consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam cubilia adipiscing interdum aliquet aliquet placerat cubilia accumsan cep ante nullam adipiscing tortor odio. Iaculis adipiscing accumsan nascetur in cras. Lacinia placerat.</p>
-								<p>Vestibulum diam quam, mollis at consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum. Morbi mattis elementum orci, nec dictum porta cursus justo. Quisque ultricies lorem in ligula condimentum, et egestas turpis sagittis. Cras ac nunc urna. Nullam eget lobortis purus. Phasellus vitae tortor non est placerat tristique faucibus magna adipiscing aliquet blandit nisi dolor accumsan nascetur lorem. Vis enim. Curae. Mi arcu vis aliquam ipsum non accumsan ac mi faucibus amet eu accumsan erat interdum semper accumsan. Eu sagittis tellus accumsan neque lorem penatibus in porttitor. Vivamus commodo curae. Condimentum lobortis praesent id ac lorem. Lorem vis ipsum dolor feugiat consequat dolore adipiscing.</p>
-								<h3>Sed Magna Ornare</h3>
-								<p>In vestibulum massa quis arcu lobortis tempus. Nam pretium arcu in odio vulputate luctus. Suspendisse euismod lorem eget lacinia fringilla. Sed sed felis justo. Nunc sodales elit in laoreet aliquam. Nam gravida, nisl sit amet iaculis porttitor, risus nisi rutrum metus. In accumsan lorem nunc ultrices a ac eu accumsan ac id nullam. Nec lobortis. Faucibus. Mi commodo laoreet arcu at non mi lacinia aliquet non lobortis phasellus accumsan nascetur varius. Integer orci porttitor eu faucibus aliquet faucibus ac accumsan adipiscing accumsan odio. Ut adipiscing.</p>
+								<!--div class="image fit"-->
+								<div class="cellauto">
+									<div class="button-group">
+										<button id="sandbtn" class="selectbtn">Sand</button>
+										<button id="firebtn" class="selectbtn">Fire</button>
+										<button id="woodbtn" class="selectbtn">Wood</button>
+										<button id="gpowderbtn" class="selectbtn">Gun Powder</button>
+										<button id="waterbtn" class="selectbtn"> Water </button>
+										
+									</div>
+									
+									<canvas id="CellAutoCanv" width="684" height="512" style="border:2px solid #000000;">
+						
+									</canvas> <br>
+								</div>
+								<!--/div-->
+								<!--a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a-->
+								<h3>A Work in Progress</h3>
+								<p>Although not really a game, yet, this project showcases prior experience developing video games as a hobby and ability to transistion programming skills to any language. Initially utilized an algorithm that had a time complexity of O(n<sup>2</sup>); however, it was optimized to a time complexity of O(n). </p>
+								<p>Furthermore, I plan to enhance the algorithm further by implementing heapsort and k-d tree algorithms to optimize the drawing speed and bringing the time complexity down to O(log(n)), since it currently slows down as more cells are generated. </p>
+								<h3>Technology Utilized</h3>
+								<p>I lied, there's more than Javascript in this game, oh wait nevermind.</p>
 								<ul>
-									<li>Faucibus orci lobortis ac adipiscing integer.</li>
-									<li>Col accumsan arcu mi aliquet placerat.</li>
-									<li>Lobortis vestibulum ut magna tempor massa nascetur.</li>
-									<li>Blandit massa non blandit tempor interdum.</li>
-									<li>Lacinia mattis arcu nascetur lobortis.</li>
+									<li>Javascript</li>
+									<li>JS HTML DOM</li>
+									<li>JS HTML BOM</li>
+									<li>HTML Canvas</li>
 								</ul>
 							</section>
 
@@ -78,12 +153,8 @@
 			<!-- Footer -->
 				<footer id="footer">
 					<ul class="icons">
-						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="https://www.linkedin.com/in/miguel-pe%C3%B1a-295337113/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/PenaSMiguel92" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 					</ul>
 					<ul class="copyright">
 						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
@@ -93,6 +164,7 @@
 		</div>
 
 		<!-- Scripts -->
+			<script src="assets/js/CellAutomata.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
